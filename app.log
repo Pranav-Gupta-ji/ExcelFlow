@@ -1,0 +1,161 @@
+2026-02-05 13:21:12,973 | INFO | Application started
+2026-02-05 13:23:27,060 | INFO | Application started
+2026-02-05 13:23:28,483 | INFO | Application started
+2026-02-05 13:25:54,252 | INFO | Application started
+2026-02-05 13:32:24,543 | INFO | Application started
+2026-02-05 13:32:24,547 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:32:26,319 | INFO | Input file read successfully
+2026-02-05 13:32:54,403 | INFO | Application started
+2026-02-05 13:32:54,411 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:32:56,225 | INFO | Input file read successfully
+2026-02-05 13:32:56,231 | INFO | Selected columns: ['Customer Name']
+2026-02-05 13:32:56,233 | INFO | Final column order: ['Customer Name']
+2026-02-05 13:32:56,239 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:02,278 | INFO | Application started
+2026-02-05 13:33:02,281 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:03,910 | INFO | Input file read successfully
+2026-02-05 13:33:03,916 | INFO | Selected columns: ['Customer Name', 'City']
+2026-02-05 13:33:03,919 | INFO | Final column order: ['Customer Name', 'City']
+2026-02-05 13:33:03,924 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:04,420 | INFO | Application started
+2026-02-05 13:33:04,423 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:05,255 | INFO | Application started
+2026-02-05 13:33:05,283 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:06,854 | INFO | Input file read successfully
+2026-02-05 13:33:07,731 | INFO | Input file read successfully
+2026-02-05 13:33:07,736 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:33:07,740 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:33:07,745 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:11,625 | INFO | Application started
+2026-02-05 13:33:11,630 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:13,349 | INFO | Input file read successfully
+2026-02-05 13:33:13,354 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment']
+2026-02-05 13:33:13,361 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment']
+2026-02-05 13:33:13,366 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:15,137 | INFO | Application started
+2026-02-05 13:33:15,146 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:16,785 | INFO | Input file read successfully
+2026-02-05 13:33:16,790 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment', 'Category']
+2026-02-05 13:33:16,795 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment', 'Category']
+2026-02-05 13:33:16,803 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:18,358 | INFO | Application started
+2026-02-05 13:33:18,362 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:20,106 | INFO | Input file read successfully
+2026-02-05 13:33:20,111 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment']
+2026-02-05 13:33:20,117 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code', 'Segment']
+2026-02-05 13:33:20,122 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:33:47,290 | INFO | Application started
+2026-02-05 13:33:47,293 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:33:49,314 | INFO | Input file read successfully
+2026-02-05 13:33:49,320 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:33:49,327 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:33:49,334 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:34:46,262 | INFO | Application started
+2026-02-05 13:34:46,266 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:34:46,494 | INFO | Application started
+2026-02-05 13:34:46,510 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:34:49,368 | INFO | Input file read successfully
+2026-02-05 13:34:49,557 | INFO | Input file read successfully
+2026-02-05 13:34:49,565 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:34:49,569 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:34:49,572 | INFO | Output mode selected: Create New Excel Workbook
+2026-02-05 13:34:49,576 | INFO | Saving file | Workbook: Customer.xlsx | Sheet: Output_20260205_1334
+2026-02-05 13:34:50,348 | INFO | Data saved successfully
+2026-02-05 13:35:48,641 | INFO | Application started
+2026-02-05 13:35:48,652 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:35:53,155 | INFO | Input file read successfully
+2026-02-05 13:35:53,175 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:35:53,185 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:35:53,201 | INFO | Output mode selected: Append to Existing Workbook
+2026-02-05 13:36:36,200 | INFO | Application started
+2026-02-05 13:36:36,205 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:36:40,456 | INFO | Input file read successfully
+2026-02-05 13:36:40,469 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:36:40,474 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:36:40,488 | INFO | Output mode selected: Append to Existing Workbook
+2026-02-05 13:36:40,490 | INFO | Existing workbook selected: Customer.xlsx
+2026-02-05 13:36:45,280 | INFO | Application started
+2026-02-05 13:36:45,292 | INFO | File uploaded: sale.xlsx
+2026-02-05 13:36:49,588 | INFO | Input file read successfully
+2026-02-05 13:36:49,603 | INFO | Selected columns: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:36:49,615 | INFO | Final column order: ['Customer Name', 'City', 'State', 'Postal Code']
+2026-02-05 13:36:49,640 | INFO | Output mode selected: Append to Existing Workbook
+2026-02-05 13:36:49,642 | INFO | Existing workbook selected: Customer.xlsx
+2026-02-05 13:36:51,321 | INFO | Saving file | Workbook: Customer.xlsx | Sheet: Output
+2026-02-05 13:36:51,322 | ERROR | Error during save operation
+2026-02-05 13:36:51,332 | ERROR | Traceback (most recent call last):
+  File "C:\Portfolio\Scrapter to Excel\app.py", line 179, in <module>
+    with pd.ExcelWriter(
+         ^^^^^^^^^^^^^^^
+  File "C:\Portfolio\Scrapter to Excel\venv\Lib\site-packages\pandas\io\excel\_openpyxl.py", line 61, in __init__
+    super().__init__(
+  File "C:\Portfolio\Scrapter to Excel\venv\Lib\site-packages\pandas\io\excel\_base.py", line 1246, in __init__
+    self._handles = get_handle(
+                    ^^^^^^^^^^^
+  File "C:\Portfolio\Scrapter to Excel\venv\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'Customer.xlsx'
+
+2026-02-05 15:42:43,420 | INFO | Application started
+2026-02-05 16:06:55,974 | INFO | Application started
+2026-02-05 16:08:35,099 | INFO | Application started
+2026-02-05 16:10:15,050 | INFO | Application started
+2026-02-05 16:10:15,055 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:15,091 | INFO | Input file loaded successfully
+2026-02-05 16:10:29,098 | INFO | Application started
+2026-02-05 16:10:29,110 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:29,138 | INFO | Input file loaded successfully
+2026-02-05 16:10:29,151 | INFO | Selected columns: ['START']
+2026-02-05 16:10:29,159 | INFO | Ordered columns: ['START']
+2026-02-05 16:10:29,186 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:34,350 | INFO | Application started
+2026-02-05 16:10:34,363 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:34,394 | INFO | Input file loaded successfully
+2026-02-05 16:10:34,410 | INFO | Selected columns: ['START', 'PURPOSE']
+2026-02-05 16:10:34,420 | INFO | Ordered columns: ['START', 'PURPOSE']
+2026-02-05 16:10:34,436 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:45,222 | INFO | Application started
+2026-02-05 16:10:45,236 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:45,250 | INFO | Input file loaded successfully
+2026-02-05 16:10:45,270 | INFO | Selected columns: ['START', 'PURPOSE', 'START_DATE']
+2026-02-05 16:10:45,281 | INFO | Ordered columns: ['START', 'PURPOSE', 'START_DATE']
+2026-02-05 16:10:45,297 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:52,721 | INFO | Application started
+2026-02-05 16:10:52,731 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:52,759 | INFO | Input file loaded successfully
+2026-02-05 16:10:52,769 | INFO | Selected columns: ['START', 'PURPOSE']
+2026-02-05 16:10:52,779 | INFO | Ordered columns: ['START', 'PURPOSE']
+2026-02-05 16:10:52,795 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:55,127 | INFO | Application started
+2026-02-05 16:10:55,139 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:55,173 | INFO | Input file loaded successfully
+2026-02-05 16:10:55,191 | INFO | Selected columns: ['START', 'PURPOSE', 'STOP']
+2026-02-05 16:10:55,200 | INFO | Ordered columns: ['START', 'PURPOSE', 'STOP']
+2026-02-05 16:10:55,208 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:57,459 | INFO | Application started
+2026-02-05 16:10:57,464 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:57,480 | INFO | Input file loaded successfully
+2026-02-05 16:10:57,491 | INFO | Selected columns: ['START', 'PURPOSE', 'STOP', 'MILES']
+2026-02-05 16:10:57,503 | INFO | Ordered columns: ['START', 'PURPOSE', 'STOP', 'MILES']
+2026-02-05 16:10:57,518 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:10:59,096 | INFO | Application started
+2026-02-05 16:10:59,110 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:10:59,153 | INFO | Input file loaded successfully
+2026-02-05 16:10:59,174 | INFO | Selected columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:10:59,200 | INFO | Ordered columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:10:59,217 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:11:33,291 | INFO | Application started
+2026-02-05 16:11:33,302 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:11:33,372 | INFO | Input file loaded successfully
+2026-02-05 16:11:33,384 | INFO | Selected columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:11:33,392 | INFO | Ordered columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:11:33,406 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:11:33,526 | INFO | Application started
+2026-02-05 16:11:33,532 | INFO | File uploaded: UberDataset.csv
+2026-02-05 16:11:33,538 | INFO | Input file loaded successfully
+2026-02-05 16:11:33,555 | INFO | Selected columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:11:33,569 | INFO | Ordered columns: ['START', 'PURPOSE', 'STOP', 'MILES', 'CATEGORY']
+2026-02-05 16:11:33,580 | INFO | Output mode: Create New Excel Workbook
+2026-02-05 16:11:33,585 | INFO | Saving output | File: NEW_Table.xlsx | Sheet: Output_20260205_1611
+2026-02-05 16:11:33,905 | INFO | Data saved successfully
