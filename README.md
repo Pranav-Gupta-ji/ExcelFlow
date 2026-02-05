@@ -1,8 +1,3 @@
-Perfect 👍
-Here’s a **clean, professional README.md** for **ExcelFlow** **without CLI or internal library mention** — focused purely on **business users + web app usage**.
-
-You can copy-paste this directly into `README.md`.
-
 ---
 
 # 📊 ExcelFlow – Business Data Formatter (No-Code Excel Automation)
@@ -70,8 +65,7 @@ ExcelFlow/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/ExcelFlow.git
-cd ExcelFlow
+git clone https://github.com/Pranav-Gupta-ji/ExcelFlow
 ```
 
 ### 2️⃣ Create Virtual Environment
@@ -111,7 +105,7 @@ streamlit run app.py
 Open in browser:
 
 ```
-http://localhost:8501
+http://192.168.1.6:8501
 ```
 
 ---
@@ -185,5 +179,6 @@ Free to use, modify, and distribute.
 ---
 
 **ExcelFlow** — turning messy data into business-ready Excel files 🚀
+
 
 ---
