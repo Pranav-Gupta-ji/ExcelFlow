@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 logger.info("Application started")
 
 # ==================================
-# Utility: Check if Excel file is locked (Windows-safe)
+# Utility: Check if Excel file is locked
 # ==================================
 def is_file_locked(filepath):
     if not os.path.exists(filepath):
@@ -86,13 +86,10 @@ if uploaded_file:
         else:
             df = pd.read_excel(uploaded_file)
 
-        logger.info("Input file loaded successfully")
-
         st.subheader("📄 Preview of Input Data")
         st.dataframe(df.head())
 
     except Exception:
-        logger.error("Failed to read input file")
         logger.error(traceback.format_exc())
         st.error("❌ Failed to read uploaded file")
         st.stop()
@@ -107,8 +104,6 @@ if uploaded_file:
     )
 
     if selected_columns:
-        logger.info(f"Selected columns: {selected_columns}")
-
         # ==================================
         # Column Ordering
         # ==================================
@@ -127,8 +122,6 @@ if uploaded_file:
             col for col, _ in sorted(col_order.items(), key=lambda x: x[1])
         ]
 
-        logger.info(f"Ordered columns: {ordered_columns}")
-
         final_df = df[ordered_columns]
 
         st.subheader("✅ Final Output Preview")
@@ -144,8 +137,6 @@ if uploaded_file:
             ["Create New Excel Workbook", "Append to Existing Workbook"]
         )
 
-        logger.info(f"Output mode: {output_mode}")
-
         workbook_path = None
 
         if output_mode == "Create New Excel Workbook":
@@ -160,37 +151,27 @@ if uploaded_file:
             )
             if existing_file:
                 workbook_path = existing_file.name
-                logger.info(f"Existing workbook selected: {workbook_path}")
 
         sheet_name_input = st.text_input(
             "Sheet name (leave blank for auto-generated)"
         )
 
         # ==================================
-        # Save Output (PRODUCTION SAFE)
+        # Save & Download Output
         # ==================================
-        if st.button("💾 Save Output"):
+        if st.button("💾 Save & Download Output"):
             try:
                 if not workbook_path:
-                    st.warning("⚠ Please select or enter a workbook")
+                    st.warning("⚠ Please enter or select a workbook")
                     st.stop()
 
-                # ---- FILE LOCK CHECK ----
                 if is_file_locked(workbook_path):
-                    logger.error(f"Excel file is locked: {workbook_path}")
-                    st.error(
-                        "❌ The Excel file is currently open or locked.\n\n"
-                        "Please close it and try again."
-                    )
+                    st.error("❌ Excel file is open or locked. Close it and try again.")
                     st.stop()
 
                 sheet_name = resolve_sheet_name(
                     workbook_path,
                     sheet_name_input
-                )
-
-                logger.info(
-                    f"Saving output | File: {workbook_path} | Sheet: {sheet_name}"
                 )
 
                 file_exists = os.path.exists(workbook_path)
@@ -202,35 +183,26 @@ if uploaded_file:
                         mode="a",
                         if_sheet_exists="new"
                     ) as writer:
-                        final_df.to_excel(
-                            writer,
-                            sheet_name=sheet_name,
-                            index=False
-                        )
+                        final_df.to_excel(writer, sheet_name=sheet_name, index=False)
                 else:
                     with pd.ExcelWriter(
                         workbook_path,
                         engine="openpyxl",
                         mode="w"
                     ) as writer:
-                        final_df.to_excel(
-                            writer,
-                            sheet_name=sheet_name,
-                            index=False
-                        )
+                        final_df.to_excel(writer, sheet_name=sheet_name, index=False)
 
-                logger.info("Data saved successfully")
                 st.success(f"✅ Data saved to sheet '{sheet_name}'")
 
-            except PermissionError:
-                logger.error("Permission error while saving Excel")
-                logger.error(traceback.format_exc())
-                st.error(
-                    "❌ Permission denied.\n\n"
-                    "Close the Excel file and try again."
-                )
+                # ⬇️ DOWNLOAD BUTTON
+                with open(workbook_path, "rb") as file:
+                    st.download_button(
+                        label="⬇️ Download Excel File",
+                        data=file,
+                        file_name=workbook_path,
+                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                    )
 
             except Exception:
-                logger.error("Unexpected error during save")
                 logger.error(traceback.format_exc())
-                st.error("❌ Failed to save data. Check app.log for details.")
+                st.error("❌ Failed to save or download file. Check app.log")
